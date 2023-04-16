@@ -346,6 +346,10 @@ ramips_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
 		;;
+	hantu,ipbox)
+		ucidef_add_switch "switch0" \
+			"0:lan" "4:wan" "6@eth0"
+		;;
 	iodata,wn-ac1167gr|\
 	iodata,wn-ac733gr3)
 		ucidef_add_switch "switch1" \
