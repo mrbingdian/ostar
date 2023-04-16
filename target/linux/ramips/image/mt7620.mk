@@ -365,6 +365,14 @@ define Device/hc5861
 endef
 TARGET_DEVICES += hc5861
 
+define Device/hantu_ipbox
+  DTS := IPBOX
+  IMAGE_SIZE := 16064k
+  DEVICE_TITLE := Hantu IPBOX
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+endef
+TARGET_DEVICES += hantu_ipbox
+
 define Device/head-weblink_hdrm200
   DTS := HDRM200
   IMAGE_SIZE := 16064k
